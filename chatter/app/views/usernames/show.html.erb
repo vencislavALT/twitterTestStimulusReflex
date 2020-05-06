@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @username.body %>
+</p>
+
+<p>
+  <strong>Likes count:</strong>
+  <%= @username.likes_count %>
+</p>
+
+<p>
+  <strong>Reposts count:</strong>
+  <%= @username.reposts_count %>
+</p>
+
+<%= link_to 'Edit', edit_username_path(@username) %> |
+<%= link_to 'Back', usernames_path %>
